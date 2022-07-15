@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+body
+{
+
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #450000;  
+   
+}
+
+.home-page__main-header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+.home-page__nav-main-header a {
+    margin: 0 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#home-page__section-1{
+    width: 90%;
+    max-height: 700px;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#home-page__header-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page__logo-wolf {
+    width: 250px;
+    /* min-width: 250px; */
+    height: auto;
+    padding: 30px 0 0 0;
+    box-sizing: initial;
+}
+
+.home-page__main-title {
+    padding: 25px 0 0 0;
+}
+
+#home-page__button-1 {
+    background-color: #000;
+    border-radius: 10px;
+    width: 200px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+#home-page__button-1:hover {
+    border: 3px solid red;
+}
+
+#home-page__button-1 span {
+    color:red;
+    user-select: none;
+}
+
+.home-page__subtitle-1 {
+    margin-top: 45px;
+    font-weight: 500;
+    width: 500px;
+    /* background-color: black; */
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+#home-page__section-2 {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+#home-page__header-2 {
+    width: 100%;
+}
+
+#home-page__subtitle-2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+#home-page__article-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0 20px 60px 20px
+}
+
+.home-page__information-block {
+    width: 500px;
+    box-sizing: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    background-color: #202020;
+    margin: 30px 0;
+    /* padding: 0 100px 0 100px; */
+}
+
+.--information-block-left
+{
+    align-self: flex-start;
+    box-shadow: 6px 7px 0 red;
+}
+
+.--information-block-right
+{
+    align-self: flex-end;
+    box-shadow: -6px -7px 0 red;
+}
+
+.home-page__title-list {
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home-page__func-list {
+    padding-top: 50px;
+}
+
+.home-page__item-list {
+    padding: 12px;
+    margin-left: 70px;
+}
+
+
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+
+
+/* medias */
+
+
+@media (max-width: 286px) {
+    #home-page__button-1 
+    {
+        width: 100%;
+    }
+    
+    #home-page__button-1 span {
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 347px) {
+    .home-page__func-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-page__item-list {
+        margin-left: 30px;
+    }
+
+    .home-page__nav-main-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-page__nav-main-header a {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .home-page__logo-wolf {
+        width: 200px;
+        padding: 80px 0 0px 0;
+    }
+
+    #home-page__subtitle-2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 532px) {
+    .home-page__subtitle-1 {
+        width: 85%;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width:565px) {
+    .home-page__information-block {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+
+@media (max-width:760px) {
+    .home-page__main-header{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:1060px) {
+    
+    body {
+        width: 100%;
+    }
+    .--information-block-left {
+        align-self: center;
+    }
+
+    .--information-block-right {
+        align-self: center;
+    }
+}
+
+
